@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="static/css/custom.css">
+    <script src="static/js/script.js"></script>
+</head>
+<body>
+    <form>
+        <label for="user-text">
+            Text :
+        </label>
+        <input type="text" id="user-text" maxlength="70" onInput="updateText()" />
+    
+        <br />
+    
+        <label for="user-picture">
+            Add image
+        </label>
+        <input type="file" id="user-picture" onChange="updateImage()" />
+    </form>
+    
+    <div id="meme">
+        <img id="meme-picture" src="https://imgflip.com/s/meme/The-Most-Interesting-Man-In-The-World.jpg" />
+    
+        <div id="meme-text">
+            Text
+        </div>
+    </div>
+    
+    <button id="save-meme" onClick="generateMeme()">
+        Save
+    </button>
+    
+    <br />
+    
+    <img id="screenshot" />
+</body>
+</html>
