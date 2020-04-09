@@ -5,6 +5,11 @@ function updateText() {
 
 function updateImage() {
   const file = document.getElementById('user-picture').files[0];
+  /*
+  preview.onload = function() {
+    window.URL.revokeObjectURL(this.src);
+  }
+  */
   document.getElementById('meme-picture').src = window.URL.createObjectURL(file);
 }
 
@@ -26,4 +31,6 @@ document.getElementById('save-meme').addEventListener('click', function () {
   });
 });
 */
+
+
   
