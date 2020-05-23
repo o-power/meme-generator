@@ -10,33 +10,23 @@
 </head>
 <body>
     <form>
-        <label for="user-text">
-            Text :
-        </label>
+        <label for="user-text">Text :</label>
         <input type="text" id="user-text" maxlength="70" oninput="updateText()" />
-    
         <br />
-    
-        <label for="user-picture">
-            Add image
-        </label>
+        <label for="user-picture">Add image</label>
         <input type="file" id="user-picture" onchange="updateImage()" />
     </form>
     
     <div id="meme">
         <img id="meme-picture" />
-    
-        <div id="meme-text">
-            Text
-        </div>
+        <div id="meme-text">Text</div>
     </div>
-    
-    <button id="save-meme" onclick="generateMeme()">
-        Save
-    </button>
-    
+    <button id="save-meme" onclick="generateMeme()">Save</button>
     <br />
     
     <img id="screenshot" />
+    <br />
+
+    <button id="trigger-download" onclick="downloadImage()">Download</button>
 </body>
 </html>
