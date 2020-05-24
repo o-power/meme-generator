@@ -1,20 +1,29 @@
-# meme-generator
-A meme generator
+# Meme Generator
 
-Download html2canvas.js from [here](http://html2canvas.hertzen.com/).
-Move it into the static/js folder.
-Point to this file from within the HTML:
+The user uploads an image and enters the text.
+
+The image is displayed using an object URL.
+
+The div element containing the image and the superimposed text is converted to a single image using the html2canvas library, which can be downloaded from [here](http://html2canvas.hertzen.com/). The downloaded file is included in the HTLML using:
 ```html
 <script src="static/js/html2canvas.js"></script>
 ```
 
-## Local Development
+## Local Development Environment
 
-Visual Studio Code.
-Live Server extension.
+Clone the GitHub repository:
+```
+git clone https://github.com/o-power/meme-generator.git
+```
+
+Move into the cloned directory:
+```
+cd meme-generator
+```
+
+Open with Visual Studio Code and add the Live Server extension to run locally.
 
 ## Acknowledgements
 
-- [Wild Code School meme generator](https://codepen.io/eveningkid/pen/qBdeQJo?editors=1010)
-- https://codepen.io/rexxars/pen/fzeHE
-- https://codepen.io/nathansouza/pen/OXdJbo
+- The bulk of the code is taken from the [Wild Code School meme generator](https://codepen.io/eveningkid/pen/qBdeQJo?editors=1010).
+- The download functionality is adapted from this [pen](https://codepen.io/nathansouza/pen/OXdJbo).

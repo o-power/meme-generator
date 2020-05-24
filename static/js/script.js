@@ -47,20 +47,14 @@ function generateMeme() {
 }
 
 /**
- * 
+ * Download the meme to the user's computer.
  */
-$('#download_meme').click(function(e){
-  $(this).attr('href', canvas.toDataURL());
-  $(this).attr('download', 'meme.png');
-});
-function download(url){
-  var a = $("<a style='display:none' id='js-downloder'>")
-  .attr("href", url)
-  .attr("download", "test.png")
-  .appendTo("body");
-
-  a[0].click();
-
-  a.remove();
+function downloadMeme() {
+  const downloadLink = document.getElementById("hidden-download");
+  const meme = document.getElementById("screenshot").src;
+  downloadLink.setAttribute("href", meme);
+  downloadLink.setAttribute("download", "meme");
+  downloadLink.click();
+  downloadLink.removeAttribute("href");
+  downloadLink.removeAttribute("download");
 }
-  
