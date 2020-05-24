@@ -1,13 +1,13 @@
 # Meme Generator
 
-The user uploads an image and enters the text.
+The user uploads an image and enters the text for their custom meme. The image is displayed using an object URL and the text is superimposed using an absolutely positioned div element.
 
-The image is displayed using an object URL.
-
-The div element containing the image and the superimposed text is converted to a single image using the html2canvas library, which can be downloaded from [here](http://html2canvas.hertzen.com/). The downloaded file is included in the HTLML using:
+When the user clicks on the Save button, the div element containing the image and the superimposed text is converted to a single image using the html2canvas library, which can be downloaded from [here](http://html2canvas.hertzen.com/). The downloaded library is included in the HTML using:
 ```html
 <script src="static/js/html2canvas.js"></script>
 ```
+
+When the user clicks on the Download button, the image is downloaded to their computer.
 
 ## Local Development Environment
 
